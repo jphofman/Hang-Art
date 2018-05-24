@@ -1,0 +1,519 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+{
+  box-sizing: border-box;
+  margin: 0;
+}
+html, body {
+
+/*  background: white;*/
+  height: 100%;
+  background-color:#fcefe7;
+  margin:0;
+  padding:0;
+}
+
+body {
+	height:100%;
+	font-size:1.5vw;
+}
+
+
+
+
+
+.container_activites {
+  font-family: 'Montserrat', helvetica, arial, sans-serif;
+  background-color:#fcefe7;
+  position: relative;
+  display: block;
+/*  width: 100%;	*/
+  width: 100vmin;
+  height: 100%;
+/*min-height:800px;*/
+  margin: auto;
+  z-index: 100;
+  overflow: hidden;
+}
+.container_activites .carousel_activites {
+  position: absolute;
+  background: black;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  will-change: transform;
+  width: 100%;
+  height: 100%;
+/*min-height:800px;*/
+  z-index: 10;
+}
+.container_activites .carousel_activites .info_back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 13vh;
+  z-index: 30;
+  background-position: center 2%;
+  background-size: cover;
+  background-image: url("../images/LesMills.jpg");
+  text-align: center 2%;
+}
+.container_activites .carousel_activites .info_back h1 {
+  text-align: center;
+  color: white;
+  margin-top: 1vh;
+  font-weight: 600;
+/*  font-size: 3vh;	*/
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  opacity: 0;
+}
+.container_activites .carousel_activites .info_back h1 .letter {
+  display: inline-block;
+  line-height: 1em;
+  opacity: 0;
+}
+.container_activites .carousel_activites .info_back:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(transparent, black);
+  opacity: 1;
+}
+.container_activites .carousel_activites .active {
+  display: block !important;
+}
+.container_activites .carousel_activites .citem {
+  display: none;
+  background: white;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  transition: all 0.4s;
+}
+.container_activites .carousel_activites .citem h1 {
+  color: black;
+  font-weight: 400;
+  margin-top: 15vh;
+  font-size:4vh;
+  padding: 2vmin 7vmin;
+  display: block;
+  width: 100%;
+  background: #eee;
+}
+.container_activites .carousel_activites .citem p {
+  color: #777;
+  font-size: 4vmin;		/* à ajuster portrait / paysage smartphone*/
+  padding: 20px 7vmin;
+  overflow:scroll;
+}
+.container_activites .carousel_activites .citem p span {
+  color: #555;
+  font-size: 19px;
+  display: block;
+  padding: 15px 0;
+}
+.container_activites .carousel_activites .citem ul {
+  color: #777;
+  padding: 0 12vmin;
+}
+.container_activites .menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: white;
+  display: none;
+}
+.container_activites .menu .close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.container_activites .fixed_banner {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+.container_activites .fixed_banner i {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.container_activites .content {
+  position: relative;
+  width: 100%;
+  height: 73vh;
+  text-align: center;
+  top:-5vh;
+}
+.container_activites .content .title {
+  font-weight: 300;
+  font-size: 7vh;
+  color: #888;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  padding-top: 2vh;
+  opacity: 0;
+}
+.container_activites .content .title .letter {
+  display: inline-block;
+  line-height: 1em;
+  opacity: 0;
+}
+.container_activites .content .helmet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 9vmin;
+}
+.container_activites .content .helmet img {
+/*	
+  position: absolute;
+  width: 59vmin;
+  height:90vmin;
+  margin: auto;
+  margin-bottom:-6vmin;
+  top: 12vmin;
+  bottom: 0vmin;
+  left: 0;
+  right: 0;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+*/
+
+
+    position: absolute;
+    width: 44vmin;
+    height: 73vmin;
+    margin: auto;
+    top: 6vmin;
+    bottom: 0vmin;
+    left: 0;
+    right: 0;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.container_activites .content .helmet .activite_position {
+/*
+  position: absolute;
+  width: 50vmin;
+  height: 50vmin;
+  background: black;
+  border-radius: 50%;
+  margin: auto;
+  bottom: 13.8vmin;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+*/
+
+      position: absolute;
+    width: 37vmin;
+    height: 37vmin;
+    background: black;
+    box-shadow: 0 10px 20px 10px black;
+/*    border-radius: 50%;*/
+    margin: auto;
+	margin-top:20vh;
+    top: 0;
+    bottom: 12vmin;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.container_activites .content .helmet .activite_position .activite_shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+/*  box-shadow: inset 0 -1.5vmax 3vmax 1.2vmax black;
+  border-radius: 50%;*/
+  z-index: 3;
+}
+.container_activites .content .helmet .activite_position .activite_photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../images/LesMills.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  z-index: 1;
+  will-change: background;
+}
+.container_activites .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 28vh;
+}
+.container_activites .bottom .nav {
+  width: 100%;
+    height: 40px;
+    margin-top: -50px;
+}
+.container_activites .bottom .nav span {
+  color: #999;
+  cursor: pointer;
+}
+.container_activites .bottom .nav span i {
+  font-size: 40px;
+  font-weight: 200;
+}
+.container_activites .bottom .nav span:nth-child(1) {
+  padding-left: 10vmin;
+}
+.container_activites .bottom .nav span:nth-child(2) {
+  padding-right: 10vmin;
+  float: right;
+}
+.container_activites .bottom .orbit {
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  height: 100vmin;
+  margin-top: -5vh;
+  border-radius: 50%;
+  border: 3px solid #d7d7d7;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.container_activites .bottom .orbit .activite_container_activites {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: -webkit-transform 0.7s ease-in;
+  transition: transform 0.7s ease-in;
+  transition: transform 0.7s ease-in, -webkit-transform 0.7s ease-in;
+}
+.container_activites .bottom .orbit .activite_container_activites .activite {
+  position: absolute;
+  border-radius: 50%;
+  width: 5vmin;
+  height: 5vmin;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  will-change: transform;
+}
+.container_activites .bottom .orbit .activite_container_activites .pt {
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  will-change: transform;
+}
+.container_activites .bottom .orbit .activite_container_activites .lesmills {
+  background: #3399ff;
+  top: -2.5vmin;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.container_activites .bottom .orbit .activite_container_activites .lesmills .point_ellipse span {
+  top: -1vmin;
+  left: -1vmin;
+}
+.container_activites .bottom .orbit .activite_container_activites .taichi {
+  background: #FDB05E;
+  right: 12vmin;
+  top: 12vmin;
+}
+/*.container_activites .bottom .orbit .activite_container_activites .taichi .point_ellipse span {
+  width: 0.5vmin;
+  height: 0.5vmin;
+}
+.container_activites .bottom .orbit .activite_container_activites .taichi .point_ellipse span:nth-child(1) {
+  top: -1vmin;
+  left: -1vmin;
+}
+.container_activites .bottom .orbit .activite_container_activites .taichi .point_ellipse span:nth-child(2) {
+  left: 1vmin;
+  bottom: -1vmin !important;
+}*/
+.container_activites .bottom .orbit .activite_container_activites .judo {
+  background: #996633;
+  right: -2.5vmin;
+  bottom: 46.5vmin;
+}
+.container_activites .bottom .orbit .activite_container_activites .artmartiaux {
+  background: #8A8975;
+  right: 12vmin;
+  bottom: 12vmin;
+}
+.container_activites .bottom .orbit .activite_container_activites .artmartiaux .ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 5px white, 0 0 0 8px rgba(0, 0, 0, 0.5), 0 0 0 12px #d6d6c2;
+  border-radius: 50%;
+}
+.container_activites .bottom .orbit .activite_container_activites .hiphop {
+  background: #C4EAED;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: -2.5vmin;
+}
+.container_activites .bottom .orbit .activite_container_activites .enfants {
+  background: #3347BA;
+  left: 12vmin;
+  bottom: 12vmin;
+}
+.container_activites .bottom .orbit .activite_container_activites .dansecouple {
+  background: #6E6E6E;
+  left: -2.5vmin;
+  bottom: 46.5vmin;
+}
+.container_activites .bottom .orbit .activite_container_activites .bikegym {
+  background: #d2a679;
+  left: 12vmin;
+  top: 12vmin;
+}
+/*
+.container_activites .bottom .orbit .activite_container_activites .fitness {
+  background:#B283FD;
+  left: 12vmin;
+  top: 12vmin;
+}
+*/
+.container_activites .bottom .orbit .name_container_activites {
+  position: absolute;
+  display: flex;
+  width: auto;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 10vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container_activites .bottom .orbit .name_container_activites .more {
+  width: 100%;
+  padding: 5px 0;
+  color: #bbb;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin-left:30%;
+  margin-right:30%;
+  margin-top:-4vh;
+}
+.container_activites .bottom .orbit .name_container_activites .more:hover {
+  color: #888;
+  transition: color 0.3s;
+}
+.container_activites .bottom .orbit .name_container_activites .pn {
+  font-size: 25px;
+  color: #666;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  letter-spacing: 8px;
+  padding-left: 8px;
+  border-bottom: 3px solid #bbb;
+  margin-top: -2vh;
+}
+.container_activites .bottom .orbit .name_container_activites .pn .letter {
+  display: inline-block;
+  line-height: 1em;
+  opacity: 0;
+}
+
+@media (orientation : portrait){
+	.container_activites .content .helmet .activite_position {
+		margin-top:27.5vh;
+	}
+.container_activites .bottom .orbit .name_container_activites .pn {
+  font-size: 50px;
+}
+.container_activites .bottom .orbit .name_container_activites .more {
+  font-size: 35px;
+}
+}
+
+.point_ellipse {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: activite_rotation 2s infinite linear;
+          animation: activite_rotation 2s infinite linear;
+}
+.point_ellipse span {
+  width: 0.8vmin;
+  height: 0.8vmin;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@-webkit-keyframes activite_rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes activite_rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v37/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

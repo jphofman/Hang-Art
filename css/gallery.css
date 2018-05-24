@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding: 100px;
+}
+
+h1 {
+	position: relative;
+	margin-bottom: 4.5vmax;
+	font-family: 'Oswald', sans-serif;
+	font-size: 4.4vmax;
+	text-transform: uppercase;
+	color: #424242;
+}
+
+.gallery-wrap-g {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 65vh;
+}
+
+.tit_v {
+    position: inherit;
+    float: left;
+/*    min-height: 8vw;	*/
+    min-width: 20%;
+    margin-top: 25vh;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.tit-yellow {
+	font-size:3vh;
+	text-align:center;
+	color:#FEFD7B;
+}
+
+.item-g {
+	flex: 1;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	transition: flex 0.8s ease;
+}
+.item-g:hover {
+	flex: 7;
+}
+
+.item-g-1 {
+	background-image: url("http://hofman.fr/HangArt/images/ballon2.jpg?auto=format&fit=crop&w=1233&q=80");
+}
+.item-g-2 {
+	background-image: url("http://hofman.fr/HangArt/images/batiment-HangArt(4x3).jpg?auto=format&fit=crop&w=1233&q=80");
+}
+
+.item-g-3 {
+	background-image: url("http://hofman.fr/HangArt/images/bg-hip-hop.jpg?auto=format&fit=crop&w=1233&q=80");
+}
+
+.item-g-4 {
+	background-image: url("http://hofman.fr/HangArt/images/Fitness_1.jpg?auto=format&fit=crop&w=1233&q=80");
+}
+
+.item-g-5 {
+	background-image: url("http://hofman.fr/HangArt/images/danse-de-salon.jpg?auto=format&fit=crop&w=1233&q=80");
+}
+.item-g-6 {
+	background-image: url("http://hofman.fr/HangArt/images/mur_ld-16_9.jpg?auto=format&fit=crop&w=1233&q=80");
+}
